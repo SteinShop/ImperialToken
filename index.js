@@ -140,12 +140,12 @@ const firebaseConfig = {
   }
   
   async function checkAdminUserExists() {
-    const adminUser = await getUserByEmail("adm@gmail.com");
+    const adminUser = await getUserByEmail("admin@gmail.com");
     if (!adminUser) {
       const defaultAdmin = {
-        email: "adm@gmail.com",
-        username: "Adm123",
-        password: "adm123",
+        email: "admin@gmail.com",
+        username: "admin123",
+        password: "adm1234",
         credits: 100000,
         score: 0,
         inventory: [],
